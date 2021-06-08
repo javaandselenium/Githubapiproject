@@ -6,9 +6,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseClass {
+	public String baseurl;
 	@BeforeSuite
 	public void setUp() throws SQLException {
-		String baseurl="https://api.github.com";
+		 baseurl="https://api.github.com";
 		DatabaseUtilies.connecttodataBase();
 	}
 	
